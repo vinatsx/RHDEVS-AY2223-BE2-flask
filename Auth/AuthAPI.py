@@ -1,7 +1,7 @@
 from flask import Blueprint, request
 import sys
 from flask_cors import cross_origin
-from db import db
+import jwt
 
 sys.path.append("../")
 
@@ -31,6 +31,8 @@ def login_user():
         if local_array[username] != password_hash:
             return {"status": "failed", "err": "username and password does not match"}
         else:
-            return
+            key = 'secret'
+            encoded = jwt.encode(local_array, key)
+            return {"status": "success", "data": encoded}
     except Exception as e:
         return {"err": "An error has occured", "status": " failed"}, 500

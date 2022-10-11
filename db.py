@@ -9,5 +9,3 @@ db = [{
     "name": "Austin",
     "scores": [9, 29, 34, 1]
 }]
-
-login = {'name': 'yuechen', 'hashedPassword': '12345'}
