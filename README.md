@@ -5,7 +5,7 @@ Setup a basic API to simulate a website that tracks profiles and scores for exam
 A simulated db is provided. Note that the db will not be updated between runs.
 
 In main: 
-- GET / homepage that returns a welcome message 
+- GET / homepage that returns a welcome message <>
 
 In profiles API (/profiles prefix):
 
