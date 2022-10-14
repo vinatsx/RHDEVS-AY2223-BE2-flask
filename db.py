@@ -9,3 +9,7 @@ db = [{
     "name": "Austin",
     "scores": [9, 29, 34, 1]
 }]
+
+creds = [{"username": "jcrosrhua", "passwordHash": "ilovemen"}]
+
+authSecretKey = "huge"
